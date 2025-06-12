@@ -118,3 +118,46 @@ body {
 .contact-form button:hover {
   background-color: #ddd;
 }
+
+
+
+
+.toggle-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 30px;
+  background: #333;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .hero,
+body.dark-mode .about,
+body.dark-mode .projects,
+body.dark-mode .contact {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .project-card,
+body.dark-mode .contact-form input,
+body.dark-mode .contact-form textarea {
+  background-color: #333;
+  color: white;
+}
+
+body.dark-mode .cta,
+body.dark-mode .contact-form button {
+  background-color: #e0e0e0;
+  color: #1f1c2c;
+}
