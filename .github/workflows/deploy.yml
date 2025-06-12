@@ -10,9 +10,16 @@ permissions:
   pages: write
   id-token: write
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages  # ✅ This MUST be exactly here
+
     steps:
       - name: ⬇️ Checkout code
         uses: actions/checkout@v4
@@ -20,7 +27,7 @@ jobs:
       - name: 🛠️ Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: 📂 Upload site
+      - name: 📦 Upload static files
         uses: actions/upload-pages-artifact@v3
         with:
           path: .
