@@ -27,6 +27,8 @@ body {
 
 
 
+
+
 .about {
   padding: 60px 20px;
   background-color: #f4f4f4;
@@ -74,4 +76,45 @@ body {
 
 .project-card:hover {
   transform: translateY(-5px);
+}
+
+
+
+
+.contact {
+  padding: 60px 20px;
+  background-color: #1f1c2c;
+  color: white;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #1f1c2c;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #ddd;
 }
